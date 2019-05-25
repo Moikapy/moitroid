@@ -1,0 +1,13 @@
+html,
+body {
+height: 45vw !important;
+  background: black;
+}
+.canvasFrame,
+.canvasFrame canvas{
+
+    height: inherit;
+}
+canvas {
+  border: 1px solid white;
+}

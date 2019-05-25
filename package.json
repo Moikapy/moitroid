@@ -1,0 +1,34 @@
+{
+	"name": "moitroid",
+	"version": "0.1.0",
+	"main": "index.js",
+	"description": "A NodeJs Docker Container using Babel and ES6",
+	"repository": "https://github.com/Moikapy/moitroid.git",
+	"license": "MIT",
+	"scripts": {
+		"dev": "nodemon -L --exec babel-node index.js",
+		"compile": "babel index.js -d build",
+		"start": "yarn compile && node build/index.js",
+		"start:docker": "npm run build:docker && npm run run:docker",
+		"run:docker": "docker run -p 8081:8081 moinode",
+		"build:docker": "docker build -t moinode .",
+		"dev:docker": "docker-compose up"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^8.0.0",
+		"express": "^4.17.0",
+		"kontra": "^6.2.0",
+		"lodash": "^4.17.11",
+		"socket.io": "^2.2.0",
+		"socket.io-client": "^2.2.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.4.4",
+		"@babel/core": "^7.0.0",
+		"@babel/node": "^7.4.5",
+		"@babel/preset-env": "^7.4.5",
+		"nodemon": "^1.19.0",
+		"yarn": "^1.16.0"
+	}
+}
