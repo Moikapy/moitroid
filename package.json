@@ -6,9 +6,9 @@
 	"repository": "https://github.com/Moikapy/moitroid.git",
 	"license": "MIT",
 	"scripts": {
-		"dev": "nodemon -L --exec babel-node index.js",
+		"start": "nodemon -L --exec babel-node index.js",
 		"compile": "babel index.js -d build",
-		"start": "yarn compile && node build/index.js",
+		"start:prod": "yarn compile && node build/index.js",
 		"start:docker": "npm run build:docker && npm run run:docker",
 		"run:docker": "docker run -p 8081:8081 moinode",
 		"build:docker": "docker build -t moinode .",
