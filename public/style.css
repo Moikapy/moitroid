@@ -1,13 +1,17 @@
 html,
 body {
-height: 45vw !important;
-  background: black;
+	height: 800px !important;
+	width: 100%;
+	background: black;
 }
 .canvasFrame,
-.canvasFrame canvas{
-
-    height: inherit;
+.canvasFrame canvas {
+  height: inherit;
 }
 canvas {
+  width: 90vh;
   border: 1px solid white;
+  padding-left: auto !important;
+  padding-right: auto !important;
+
 }
