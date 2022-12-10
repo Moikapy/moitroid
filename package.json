@@ -21,7 +21,7 @@
 		"@babel/preset-env": "^7.4.5",
 		"cors": "^2.8.5",
 		"dotenv": "^8.0.0",
-		"express": "^4.17.0",
+		"express": "^4.17.3",
 		"kontra": "^6.2.0",
 		"lodash": "^4.17.11",
 		"socket.io": "^2.2.0",
